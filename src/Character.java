@@ -1,22 +1,27 @@
 class Character {
-    public int INT = 10;
-    public int DEX = 10;
-    public int STR = 10;
+    public int DEX;
+    public int STR;
+    public int INT;
+
 
     public Character Rogue(){
-        DEX += 2;
+        DEX = 12;
+        INT = 10;
+        STR = 10;
         return this;
     }
 
     public Character Warrior(){
-        STR += 2;
-        INT -= 2;
+        DEX = 10;
+        INT = 9;
+        STR = 12;
         return this;
     }
 
     public Character Mage(){
-        STR -= 2;
-        INT += 2;
+        DEX = 10;
+        INT = 12;
+        STR = 8;
         return this;
     }
 }
